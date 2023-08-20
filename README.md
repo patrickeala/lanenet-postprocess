@@ -1,6 +1,6 @@
 # LaneNet Postprocessing
 
-This repository contains the postprocessing pipeline for refining and interpreting lane detection results obtained from the LaneNet model. The LaneNet model generates binary and instance outputs, representing lane presence and lane instance embeddings, respectively. The postprocessing steps aim to enhance the lane detection results and extract meaningful lane instances. This project was based of https://github.com/MaybeShewill-CV/lanenet-lane-detection and https://github.com/MaybeShewill-CV/MNN-LaneNet.
+This repository contains the postprocessing pipeline for refining and interpreting lane detection results obtained from the LaneNet model. The LaneNet model generates binary and instance outputs, representing lane presence and lane instance embeddings, respectively. The postprocessing steps aim to enhance the lane detection results and extract meaningful lane instances. This project was based off https://github.com/MaybeShewill-CV/lanenet-lane-detection and https://github.com/MaybeShewill-CV/MNN-LaneNet.
 
 ## Postprocessing Steps
 
