@@ -54,10 +54,10 @@ The program will generate binary and instance segmentation images in the specifi
 ## Example Results
 
 ### Input Image
-![Input Image](build/input_25.png)
+![Input Image](100_test/samples/input_25.png)
 
 ### Binary Segmentation
-![Binary Segmentation](build/binary_ret.png)
+![Binary Segmentation](100_test/samples/binary_ret.png)
 
 ### Instance Segmentation
-![Instance Segmentation](build/instance_ret.png)
+![Instance Segmentation](100_test/samples/instance_ret.png)
