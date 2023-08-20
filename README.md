@@ -14,7 +14,7 @@ This repository contains the postprocessing pipeline for refining and interpreti
 
 5. **Calculating Mean and Standard Deviation:** Calculate the mean and standard deviation of normalized embedding feature vectors within each cluster. The mean represents a characteristic feature profile, while the standard deviation indicates variability.
 
-## Optimization and Considerations
+## Optimization and Potential Improvements
 
 - **Thresholding:** Experiment with binary output thresholding to balance precision and recall in lane detection.
 
