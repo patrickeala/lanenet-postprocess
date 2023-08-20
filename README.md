@@ -45,8 +45,19 @@ This repository contains the postprocessing pipeline for refining and interpreti
 3. Compile and run the program:
    ```bash
    ./main PATH_TO_NPY_DIR IMG_INDEX
-for example:
-   ```bash
+   
    ./main ../100_test/model_output/ 1
    
 The program will generate binary and instance segmentation images in the specified input directory.
+
+
+## Example Results
+
+### Input Image
+![Input Image](build/input_25.png)
+
+### Binary Segmentation
+![Binary Segmentation](build/binary_ret.png)
+
+### Instance Segmentation
+![Instance Segmentation](build/instance_ret.png)
