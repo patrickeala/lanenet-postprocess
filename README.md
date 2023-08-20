@@ -4,7 +4,7 @@ This repository contains the postprocessing pipeline for refining and interpreti
 
 ## Postprocessing Steps
 
-1. **Loading Binary and Instance Outputs:** Load the binary and instance outputs obtained from the LaneNet model. The binary output represents pixel-wise lane presence, while the instance output contains pixel embedding features.
+1. **Loading Binary and Instance Outputs:** Load the binary and instance outputs obtained from the LaneNet model. The binary output represents pixel-wise lane presence, while the instance output contains pixel embedding features. They are found in /100_test/model_output/.
 
 2. **Gather Pixel Embedding Features:** Extract pixel embedding features from the instance output for pixels corresponding to detected lanes. Collect the embedding vectors associated with pixels labeled as lanes.
 
