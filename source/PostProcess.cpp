@@ -6,15 +6,15 @@
 
 namespace postprocess {
 
-PostProcess::PostProcess(const std::string& input_dir) {
-    loadNpyImages(input_dir);
+PostProcess::PostProcess(const std::string& input_dir, const std::string& idx) {
+    loadNpyImages(input_dir, idx);
 }
 
-void PostProcess::loadNpyImages(const std::string& input_dir) {
+void PostProcess::loadNpyImages(const std::string& input_dir, const std::string& idx) {
     // Implement loading .npy image here
-    int idx = 0;
-    std::string bin_path = input_dir + std::to_string(idx) + "_binary.npy";
-    std::string ins_path = input_dir + std::to_string(idx) + "_instance.npy";
+    // int idx = 0;
+    std::string bin_path = input_dir + idx + "_binary.npy";
+    std::string ins_path = input_dir + idx + "_instance.npy";
 
     // Binary
 	cnpy::NpyArray bin_data = cnpy::npy_load(bin_path);

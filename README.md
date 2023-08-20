@@ -42,10 +42,11 @@ This repository contains the postprocessing pipeline for refining and interpreti
    cmake ..
    make
 
-3. Update the main.cpp file with the appropriate input directory containing LaneNet model outputs.
-
-4. Compile and run the program:
+3. Compile and run the program:
    ```bash
-   ./lanenet_postprocess
+   ./main PATH_TO_NPY_DIR IMG_INDEX
+for example:
+   ```bash
+   ./main ../100_test/model_output/ 1
    
 The program will generate binary and instance segmentation images in the specified input directory.

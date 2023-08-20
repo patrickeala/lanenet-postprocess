@@ -17,18 +17,20 @@ using postprocess::PostProcess;
 
 int main(int argc, char** argv)
 {
-    std::string input_dir = "/100_test/model_output/";
+    // std::string input_dir = "../100_test/model_output/";
+    std::string input_dir = argv[1];
+    std::string idx = argv[2];
 
-    postprocess::PostProcess postProcessor(input_dir);
+    postprocess::PostProcess postProcessor(input_dir, idx);
     postProcessor.visualize_Binary();
     
     cv::Mat binary_mask;
     cv::Mat instance_mask;
     postProcessor.process(binary_mask, instance_mask);
 
-    cv::imshow("Display Image", binary_mask);
+    cv::imshow("Binary Image", binary_mask);
     cv::waitKey(0);
-    cv::imshow("Display Image", instance_mask);
+    cv::imshow("Instance Image", instance_mask);
     cv::waitKey(0);
 
     // cv::imwrite("binary_ret.png", binary_mask);

@@ -10,9 +10,9 @@ using Feature = Feature<float>;
 
 class PostProcess {
 public:
-    PostProcess(const std::string& input_dir);
+    PostProcess(const std::string& input_dir, const std::string& idx);
 
-    void loadNpyImages(const std::string& input_dir);
+    void loadNpyImages(const std::string& input_dir, const std::string& idx);
     void visualize_Binary() const;
 
     void process(cv::Mat &binary_seg_result, cv::Mat &instance_seg_result);
