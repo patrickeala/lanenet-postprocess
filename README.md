@@ -49,3 +49,15 @@ This repository contains the postprocessing pipeline for refining and interpreti
    ./main ../100_test/model_output/ 1
    
 The program will generate binary and instance segmentation images in the specified input directory.
+
+
+## Example Results
+
+### Input Image
+![Input Image](build/input_25.png)
+
+### Binary Segmentation
+![Binary Segmentation](build/binary_ret.png)
+
+### Instance Segmentation
+![Instance Segmentation](build/instance_ret.png)
