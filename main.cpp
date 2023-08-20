@@ -17,7 +17,7 @@ using postprocess::PostProcess;
 
 int main(int argc, char** argv)
 {
-    std::string input_dir = "/home/patrick/lanenet-lane-detection/tusimple_dataset/TUSimple/test_set/100_test/model_output/";
+    std::string input_dir = "/100_test/model_output/";
 
     postprocess::PostProcess postProcessor(input_dir);
     postProcessor.visualize_Binary();

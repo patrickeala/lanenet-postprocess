@@ -1,3 +1,0 @@
-/home/patrick/test/build/CMakeFiles/main.dir
-/home/patrick/test/build/CMakeFiles/edit_cache.dir
-/home/patrick/test/build/CMakeFiles/rebuild_cache.dir
