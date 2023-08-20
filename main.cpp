@@ -29,9 +29,9 @@ int main(int argc, char** argv)
     cv::imshow("Instance Image", instance_mask);
     cv::waitKey(0);
 
-    // Just to save output
-    cv::imwrite("binary_ret.png", binary_mask);
-    cv::imwrite("instance_ret.png", instance_mask);
+    // // Just to save output
+    // cv::imwrite("binary_ret.png", binary_mask);
+    // cv::imwrite("instance_ret.png", instance_mask);
 
     
     return 0;
