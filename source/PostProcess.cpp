@@ -30,8 +30,6 @@ void PostProcess::loadNpyImages(const std::string& input_dir, const std::string&
     std::complex<double>* ptr_ins = ins_data.data<std::complex<double>>();
     pix_embedding_output_mat = cv::Mat(ins_data.shape[0], ins_data.shape[1], CV_32FC4, ptr_ins).clone();
 
-
-
 }
 
 void PostProcess::visualize_Binary() const {

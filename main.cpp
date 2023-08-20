@@ -2,9 +2,6 @@
 #include <opencv2/opencv.hpp>
 #include <stdio.h>
 #include "cnpy.h"
-// #include <numpy/arrayobject.h>
-// #include "NumCpp.hpp"
-// #include <experimental/filesystem>
 #include <iostream>
 #include <numeric>
 #include "source/PostProcess.h"
@@ -17,7 +14,6 @@ using postprocess::PostProcess;
 
 int main(int argc, char** argv)
 {
-    // std::string input_dir = "../100_test/model_output/";
     std::string input_dir = argv[1];
     std::string idx = argv[2];
 
@@ -33,17 +29,9 @@ int main(int argc, char** argv)
     cv::imshow("Instance Image", instance_mask);
     cv::waitKey(0);
 
-    // cv::imwrite("binary_ret.png", binary_mask);
-    // cv::imwrite("instance_ret.png", instance_mask);
-
-    // Set your DBSCAN parameters
-    // double epsilon = 0.1;
-    // int minPoints = 5;
-
-    // postProcessor.performDBSCAN(epsilon, minPoints);
-    // postProcessor.gatherPixelEmbeddings();
-
-    // postProcessor.visualizeImage("Image Visualization");
+    // Just to save output
+    cv::imwrite("binary_ret.png", binary_mask);
+    cv::imwrite("instance_ret.png", instance_mask);
 
     
     return 0;
