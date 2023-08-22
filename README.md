@@ -10,10 +10,8 @@ This repository contains the postprocessing pipeline for refining and interpreti
 
 3. **Cluster Pixel Embedding Features:** Utilize the DBSCAN algorithm to group pixels with similar embedding features into clusters. DBSCAN identifies dense regions of data points and discards noise points.
 
-4. **Normalization of Sample Features:** Normalize the embedding feature vectors within each cluster. Apply normalization techniques such as z-score or min-max scaling to ensure fair feature comparison.
-
-5. **Calculating Mean and Standard Deviation:** Calculate the mean and standard deviation of normalized embedding feature vectors within each cluster. The mean represents a characteristic feature profile, while the standard deviation indicates variability.
-
+4. **Normalization of Sample Features:** Normalize the embedding feature vectors within each cluster. This ensures that all dimensions of the feature space contribute equally to the clustering process, regardless of their original scales.
+   
 ## Optimization and Potential Improvements
 
 - **Thresholding:** Experiment with binary output thresholding to balance precision and recall in lane detection.
